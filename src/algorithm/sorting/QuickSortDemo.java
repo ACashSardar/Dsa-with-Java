@@ -13,10 +13,10 @@ public class QuickSortDemo {
 			return;
 
 		int pivot = arr[low];
-		int l = low;
+		int l = low+1;
 		int r = high;
 
-		while (l < r) {
+		while (l <= r) {
 			while (l <= high && arr[l] <= pivot) {
 				l++;
 			}
@@ -34,7 +34,7 @@ public class QuickSortDemo {
 
 	public static void main(String[] args) {
 		System.out.println("Quick Sort: TC-O(nlog(n)), SC-O(1)");
-		int[] arr = new int[] { 4, 2, 6, 9, 7, 3, 1, 8, 5 };
+		int[] arr = new int[] { 4, 1, 7, 6, 9, 3, 2, 5, 8, 0, 2, 7, 6, 1, 6, 9 };
 		int n = arr.length;
 		quickSort(arr, 0, n - 1);
 		for (int x : arr)
