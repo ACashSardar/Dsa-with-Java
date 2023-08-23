@@ -10,16 +10,13 @@ public class TopologicalSort {
 		for (int i = 0; i < adj.get(curr).size(); i++) {
 			int target = adj.get(curr).get(i);
 			if (vis[target] != 1) {
-				vis[target] = 1;
 				dfs(target, adj, vis, stk);
 			}
 		}
 		stk.push(curr);
 	}
 
-	// Function to return list containing vertices in Topological order.
 	static int[] topoSort(int V, ArrayList<ArrayList<Integer>> adj) {
-		// add your code here
 		Stack<Integer> stk = new Stack<>();
 		int[] vis = new int[V];
 		for (int i = 0; i < V; i++) {
@@ -36,7 +33,6 @@ public class TopologicalSort {
 	}
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
 
 	}
 

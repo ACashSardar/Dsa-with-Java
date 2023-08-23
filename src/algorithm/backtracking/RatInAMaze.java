@@ -35,9 +35,9 @@ public class RatInAMaze {
     
 }
 	public static void main(String[] args) {
-		int n=5;
-        ArrayList<String> ans=new ArrayList<>();
-        boolean [][] visited=new boolean[n][n];
+//		int n=5;
+//        ArrayList<String> ans=new ArrayList<>();
+//        boolean [][] visited=new boolean[n][n];
 //        ratInMaze(n-1, n-1, arr,n, "",visited, ans);
 	}
 

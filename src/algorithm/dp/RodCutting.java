@@ -17,7 +17,7 @@ public class RodCutting {
 	}
 
 	public static int cutRod(int price[], int n) {
-		int[][] dp = new int[n][n + 1];
+//		int[][] dp = new int[n][n + 1];
 
 //		MEMOIZATION
 //		for (int[] row : dp) {

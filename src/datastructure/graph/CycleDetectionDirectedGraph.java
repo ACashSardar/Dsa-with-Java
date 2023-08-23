@@ -3,6 +3,9 @@ package datastructure.graph;
 import java.util.ArrayList;
 
 public class CycleDetectionDirectedGraph {
+
+//	 Using DFS
+
 	public boolean dfs(int curr, ArrayList<ArrayList<Integer>> adj, int[] vis, int[] pathVis) {
 		vis[curr] = 1;
 		pathVis[curr] = 1;
@@ -32,9 +35,34 @@ public class CycleDetectionDirectedGraph {
 		return false;
 	}
 
-	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-
-	}
-
+//	Using BFS & Topological sort
+	
+//    public boolean isCyclic(int v, ArrayList<ArrayList<Integer>> adjList) {
+//        int[] indegree = new int[v];
+//		for (ArrayList<Integer> nodes : adjList) {
+//			for (int dest : nodes) {
+//				indegree[dest]++;
+//			}
+//		}
+//        int cnt=0;
+//		Queue<Integer> q = new LinkedList<>();
+//		for (int i = 0; i < v; i++) {
+//			if (indegree[i] == 0) {
+//				q.add(i);
+//			}
+//		}
+//		while (!q.isEmpty()) {
+//			int curr = q.poll();
+//			cnt++;
+//			for (int adjNode : adjList.get(curr)) {
+//				if (indegree[adjNode] > 0) {
+//					indegree[adjNode]--;
+//					if (indegree[adjNode] == 0) {
+//						q.add(adjNode);
+//					}
+//				}
+//			}
+//		}
+//		return cnt<v;
+//    }
 }

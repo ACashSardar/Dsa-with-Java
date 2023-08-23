@@ -1,7 +1,5 @@
 package algorithm.dp;
 
-import java.util.Arrays;
-
 public class LongestCommonSubsequence {
 
 	static int func(int i1, int i2, String text1, String text2, int[][] dp) {

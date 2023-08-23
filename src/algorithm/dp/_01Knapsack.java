@@ -21,12 +21,12 @@ public class _01Knapsack {
 	public static int knapsack(int[] weight, int[] value, int n, int maxWeight) {
 		int[][] dp = new int[n][maxWeight + 1];
 
-//         for(int [] row: dp){
-//             for(int c=0; c<row.length; c++){
-//                 row[c]=-1;
-//             }
-//         }
-//             return func(n-1,weight,value,maxWeight, dp);
+		// for(int [] row: dp){
+		// for(int c=0; c<row.length; c++){
+		// row[c]=-1;
+		// }
+		// }
+		// return func(n-1,weight,value,maxWeight, dp);
 
 		// Tabulation
 		for (int W = weight[0]; W <= maxWeight; W++) {

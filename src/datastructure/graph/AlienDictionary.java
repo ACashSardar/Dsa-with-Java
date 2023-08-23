@@ -23,7 +23,8 @@ public class AlienDictionary {
 	}
 
 	public String findOrder(String[] dict, int N, int K) {
-		// Write your code here
+
+		@SuppressWarnings("unchecked")
 		ArrayList<Character>[] graph = new ArrayList[K];
 		for (int i = 0; i < N - 1; i++) {
 			String s1 = dict[i];
