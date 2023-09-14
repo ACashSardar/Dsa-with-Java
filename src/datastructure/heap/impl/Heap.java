@@ -43,7 +43,6 @@ public class Heap {
 
 	public void fixHeapBelow(int index, int lastHeapIndex) {
 		int childToSwap = 0;
-
 		while (index <= lastHeapIndex) {
 			int leftChild = getChild(index, true);
 			int rightChild = getChild(index, false);
